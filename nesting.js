@@ -51,7 +51,14 @@ var employees = [
 */
 
 function employeeUpdater(){
-  
+  for(i = 0; i < employees.length; i++){
+    if (employees[i].firstName === "Theo"){
+      delete employees[i];
+    } else if (employees[i].firstName === "Lorie"){
+      employees[i].department = "HR";
+    }
+  }
+  return employees
 }
 
 
@@ -71,6 +78,12 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 //Code Here
+
+function removeDuplicates(workplaceAccidents){
+  for(i = 0; i < workplaceAccidents.length; i++){ 
+  }
+}
+  
 
 
 
@@ -99,8 +112,8 @@ var cat = {
 */
 
 //Code Here
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -141,6 +154,18 @@ var myCar = {
 */
 
 //Code Here
+crash = myCar.accidents;
+function recordCleaner(crash){
+  for (i = 0; i < crash.length; i++){
+    for(let key in prop){
+      if (key === atFaultForAccident){
+        key[i] = false;
+      }
+    }
+  }
+}
+
+  
 
 
 
@@ -160,5 +185,8 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+function looper(){
+
+}
 
 
